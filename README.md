@@ -1,4 +1,4 @@
-# fungibletoken
+# MCSM
 MCSM uses the open source fungibletoken framework for minting. Minting and Airdrop feature adapted for the MCSC-1 token standard. Do not use airdrop feature with non-MCSC-1 tokens, you may lose your tokens.
 
 
