@@ -1,0 +1,29 @@
+{
+  "canisters": {
+    "fungibletoken_backend": {
+      "main": "src/fungibletoken_backend/main.mo",
+      "type": "motoko"
+    },
+    "fungibletoken_frontend": {
+      "dependencies": [
+        "fungibletoken_backend"
+      ],
+      "frontend": {
+        "entrypoint": "src/fungibletoken_frontend/src/index.html"
+      },
+      "source": [
+        "src/fungibletoken_frontend/assets",
+        "dist/fungibletoken_frontend/"
+      ],
+      "type": "assets"
+    }
+  },
+  "defaults": {
+    "build": {
+      "args": "",
+      "packtool": "mops sources"
+    }
+  },
+  "output_env_file": ".env",
+  "version": 1
+}
